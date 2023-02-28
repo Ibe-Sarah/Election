@@ -1,0 +1,128 @@
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #005427;
+  }
+ h4{
+  color: white;
+}
+h3{
+  color: #52BF10;
+}
+
+.container {
+        display: flex;
+    height: 100vh;
+    flex-direction: row;
+  }
+  .image { 
+    /* The image used */
+    /* background-image: url("election.jpg.jpg"); */
+  
+    /* Center and scale the image nicely */
+    
+    background-position: right top;
+    background-size: 100vh 100vh;
+    flex: 1;
+    height: 100%;
+    width: 50%;
+    position: relative;
+  }
+  .txt {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    width: 15em;
+  }
+  .form {
+    /* flex= 1 to enable it take 50% of the page */
+    flex: 1; 
+    height: 100%;
+    
+    margin-top: 100px;
+    background-color: #005427;
+    margin-left: 2em;
+    text-align: center;
+   
+  }
+  label.required:after {
+    content: "*";
+    color: red;
+    margin-right: 5px;
+  }
+  form{
+    text-align: left;
+    margin-left: 8.5em;
+    width: 23em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 5px !important;
+    gap: 0.3em;
+    border: none;
+    color: white;
+
+  }
+  label{
+    margin-top: 1em;
+  }
+  #unit,#name, #email, #number, #location, #des, #location, #capture {
+border-radius: 10px;
+height: 3em;
+/* padding: 0.5em; */
+margin-top: -0.2em;
+border: none;
+  }
+  #unit, #location, #des{
+    margin-top: 1em;
+  }
+  #des{
+    margin-top: 1em;
+    height: 4em;
+  }
+  .upload-btn {
+    background-color: white;
+    color: white;
+    padding: 12px 24px;
+    font-size: 12px;
+    border: none;
+    text-align: center !important;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 2em;
+    height:7em ;
+    color: black;
+  }
+  .upload-btn:hover {
+    /* background-color: #3e8e41; */
+  }
+  .upload-btn i {
+    margin-right: 5px;
+  }
+  .icon {
+    margin-left: 1em;
+    margin-top: -2em !important;
+    width: 1.5em;
+    height: 1.5em;
+
+  }
+  
+  /* Hide the file upload input field */
+  #file-upload {
+    display: none;
+  }
+  .submit{
+    background-color:#52BF10; ;
+    color: white;
+    border: none;
+    height:3em;
+    border-radius: 5px;
+    margin-top: 1em;
+  }

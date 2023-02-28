@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+      <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <div class="form">
+            <img class="logo" src="logo.jpg.jpg">
+            <h3>
+                <strong>Get in touch.</strong>
+            </h3>
+             </p>
+             <h4><strong>We will love to hear from you. Please, fill out this form</h4></strong> 
+            <form>
+    <form>
+      
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+      
+        
+       
+        <label class="required"for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+               
+            <label for="number">Phone number:</label>
+            <input type="tel" id="number" name="number" required>
+                        
+            
+            <label class="required" for="unit">Polling unit:</label>
+            <input type="text" id="unit" name="unit" required >
+            
+    
+            
+                <label class="required" for="location">Video location:</label>
+                <input type="text" id="location" name="location" required>
+                
+               
+                <label for="des">Describe Event: </label>
+                    <textarea id="des" name="des"></textarea>
+                   
+            
+                    <button class="upload-btn" onclick="document.getElementById('file-upload').click();">
+                      <p> Browse and choose the file file you want to upload from your computer </p>
+                       <img class="icon" src="CTA.jpg">
+                    </button>
+                      
+                      <!-- Add the file upload input field -->
+                      <input id="file-upload" type="file" name="file" />
+                
+                <button class="submit" type="submit">Submit</button>
+               
+            </form>
+
+        </div>
+        <div class="image">
+      <div class="txt" > Please send in your video <br>coverage of the 
+    elections <br>observed at your various <br>polling units </div>   
+<img class= 'elect' src="election.jpg.jpg"/>
+
+        </div>
+    </section>
+</body>
+</html>
